@@ -1,10 +1,10 @@
 {
-  "name": "thermal-printer-cordova-plugin",
+  "name": "bthrust-thermal-printer-cordova-plugin",
   "version": "1.0.0",
   "description": "Cordova wrapper for ESC/POS Thermal Printer library",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paystory-de/thermal-printer-cordova-plugin.git"
+    "url": "git+https://github.com/bthrust-suraj/thermal-printer-cordova-plugin.git"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -18,13 +18,13 @@
     "esc/pos"
   ],
   "author": {
-    "name": "Patrick Bußmann",
-    "email": "patrick.bussmann@paystory.de",
-    "url": "http://paystory.de/"
+    "name": "Suraj Prasad",
+    "email": "suraj@businessthrust.com",
+    "url": "http://businessthrust.com/"
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/paystory-de/thermal-printer-cordova-plugin.git/issues"
+    "url": "https://github.com/bthrust-suraj/thermal-printer-cordova-plugin.git/issues"
   },
-  "homepage": "https://github.com/paystory-de/thermal-printer-cordova-plugin#readme"
+  "homepage": "https://github.com/bthrust-suraj/thermal-printer-cordova-plugin#readme"
 }
