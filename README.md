@@ -1,5 +1,5 @@
 ## Cordova Plugin for Thermal Printer's
-[![npm version](https://img.shields.io/npm/v/thermal-printer-cordova-plugin.svg)](https://www.npmjs.com/package/thermal-printer-cordova-plugin) [![npm downloads](https://img.shields.io/npm/dm/thermal-printer-cordova-plugin.svg)](https://www.npmjs.com/package/thermal-printer-cordova-plugin)
+[![npm version](https://img.shields.io/npm/v/thermal-printer-cordova-plugin.svg)](https://www.npmjs.com/package/bthrust-thermal-printer-cordova-plugin) [![npm downloads](https://img.shields.io/npm/dm/thermal-printer-cordova-plugin.svg)](https://www.npmjs.com/package/bthrust-thermal-printer-cordova-plugin)
 
 ---
 
@@ -7,17 +7,9 @@ This plugin is a wrapper for the [Android library for ESC/POS Thermal Printer](h
 
 ### Install
 
-#### Cordova
-
-    $ cordova plugin add thermal-printer-cordova-plugin
-
-#### Ionic
-
-    $ ionic cordova plugin add thermal-printer-cordova-plugin
-
 #### Capacitor
 
-    $ npm install thermal-printer-cordova-plugin
+    $ npm install bthrust-thermal-printer-cordova-plugin
     $ npx cap sync
 
 Don't forget to add BLUETOOTH and INTERNET (for TCP) permissions and for USB printers the `android.hardware.usb.host` feature to the `AndroidManifest.xml`.
@@ -59,6 +51,27 @@ Print a formatted text and feed paper
 <a name="printFormattedTextAndCut"></a>
 
 ### printFormattedTextAndCut(data, successCallback, errorCallback)
+Print a formatted text, feed paper and cut the paper
+
+**See**: https://github.com/DantSu/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| data | <code>Array.&lt;Object&gt;</code> | Data object |
+| data.type | <code>&quot;bluetooth&quot;</code> \| <code>&quot;tcp&quot;</code> \| <code>&quot;usb&quot;</code> | List all bluetooth or usb printers |
+| [data.id] | <code>string</code> \| <code>number</code> | ID of printer to find (Bluetooth: address, TCP: Use address + port instead, USB: deviceId) |
+| [data.address] | <code>string</code> | If type is "tcp" then the IP Address of the printer |
+| [data.port] | <code>number</code> | If type is "tcp" then the Port of the printer |
+| [data.mmFeedPaper] | <code>number</code> | Millimeter distance feed paper at the end |
+| [data.dotsFeedPaper] | <code>number</code> | Distance feed paper at the end |
+| data.text | <code>string</code> | Formatted text to be printed |
+| successCallback | <code>function</code> | Result on success |
+| errorCallback | <code>function</code> | Result on failure |
+
+
+<a name="printFormattedTextAndOpenCashBox"></a>
+
+### printFormattedTextAndOpenCashBox(data, successCallback, errorCallback)
 Print a formatted text, feed paper and cut the paper
 
 **See**: https://github.com/DantSu/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide  
