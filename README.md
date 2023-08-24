@@ -1,5 +1,5 @@
 ## Cordova Plugin for Thermal Printer's
-[![npm version](https://img.shields.io/npm/v/thermal-printer-cordova-plugin.svg)](https://www.npmjs.com/package/bthrust-thermal-printer-cordova-plugin) [![npm downloads](https://img.shields.io/npm/dm/thermal-printer-cordova-plugin.svg)](https://www.npmjs.com/package/bthrust-thermal-printer-cordova-plugin)
+[![npm version](https://img.shields.io/npm/v/bthrust-thermal-printer-cordova-plugin.svg)](https://www.npmjs.com/package/bthrust-thermal-printer-cordova-plugin) [![npm downloads](https://img.shields.io/npm/dm/bthrust-thermal-printer-cordova-plugin.svg)](https://www.npmjs.com/package/bthrust-thermal-printer-cordova-plugin)
 
 ---
 
