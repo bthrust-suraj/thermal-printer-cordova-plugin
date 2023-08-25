@@ -72,7 +72,7 @@ Print a formatted text, feed paper and cut the paper
 <a name="printFormattedTextAndOpenCashBox"></a>
 
 ### printFormattedTextAndOpenCashBox(data, successCallback, errorCallback)
-Print a formatted text, feed paper and cut the paper
+Print a formatted text, cut the paper and open the cash box.
 
 **See**: https://github.com/DantSu/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide  
 
