@@ -5,5 +5,5 @@ allprojects {
 }
 
 dependencies {
-   implementation 'com.github.bthrust-suraj:ESCPOS-ThermalPrinter-Android:1.0.2'
+   implementation 'com.github.bthrust-suraj:ESCPOS-ThermalPrinter-Android:1.0.5'
 }
