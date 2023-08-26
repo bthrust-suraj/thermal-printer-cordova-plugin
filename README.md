@@ -68,7 +68,6 @@ Print a formatted text, feed paper and cut the paper
 | successCallback | <code>function</code> | Result on success |
 | errorCallback | <code>function</code> | Result on failure |
 
-
 <a name="printFormattedTextAndOpenCashBox"></a>
 
 ### printFormattedTextAndOpenCashBox(data, successCallback, errorCallback)
@@ -86,6 +85,18 @@ Print a formatted text, cut the paper and open the cash box.
 | [data.mmFeedPaper] | <code>number</code> | Millimeter distance feed paper at the end |
 | [data.dotsFeedPaper] | <code>number</code> | Distance feed paper at the end |
 | data.text | <code>string</code> | Formatted text to be printed |
+| successCallback | <code>function</code> | Result on success |
+| errorCallback | <code>function</code> | Result on failure |
+
+<a name="openCashBoxDrawer"></a>
+
+### openCashBoxDrawer(successCallback, errorCallback)
+Open the cash box.
+
+**See**: https://github.com/bthrust-suraj/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide  
+
+| Param | Type | Description |
+| --- | --- | --- |
 | successCallback | <code>function</code> | Result on success |
 | errorCallback | <code>function</code> | Result on failure |
 

@@ -71,6 +71,16 @@ module.exports = {
   },
 
   /**
+   * Open cashbox drawer
+   *
+   * @param {function} successCallback - Result on success
+   * @param {function} errorCallback - Result on failure
+   */
+  openCashBoxDrawer: function(successCallback, errorCallback) {
+    cordova.exec(successCallback, errorCallback, 'ThermalPrinter', 'openCashBoxDrawer', []);
+  },
+
+  /**
    * Get the printer encoding when available
    *
    * @param {Object[]} data - Data object

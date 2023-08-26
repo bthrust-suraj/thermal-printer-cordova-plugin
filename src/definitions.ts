@@ -108,6 +108,13 @@ export interface ThermalPrinterPlugin {
 
   /**
    * Get the printer encoding when available
+   * @param {function} success
+   * @param {function} error
+   */
+  openCashBoxDrawer(success: (value: GetEncodingResult) => any, error: (value: ErrorResult) => void);
+
+  /**
+   * Open cashbox drawer
    *
    * @param {Object[]} data - Data object
    * @param {"bluetooth"|"tcp"|"usb"} data.type - List all bluetooth or usb printers
