@@ -222,8 +222,18 @@ public class ThermalPrinterCordovaPlugin extends CordovaPlugin {
 
     private void openCashBoxDrawer(CallbackContext callbackContext, JSONObject data) throws JSONException {
         EscPosPrinter printer = this.getPrinter(callbackContext, data);
-        printer.openCashBoxDrawer();
-        callbackContext.success();
+        try {
+            printer.openCashBoxDrawer();
+            callbackContext.success();
+        } catch (EscPosConnectionException e) {
+            callbackContext.error(new JSONObject(new HashMap<String, Object>() {{
+                put("error", e.getMessage());
+            }}));
+        } catch (Exception e) {
+            callbackContext.error(new JSONObject(new HashMap<String, Object>() {{
+                put("error", e.getMessage());
+            }}));
+        }
     }
 
     private void getEncoding(CallbackContext callbackContext, JSONObject data) throws JSONException {
