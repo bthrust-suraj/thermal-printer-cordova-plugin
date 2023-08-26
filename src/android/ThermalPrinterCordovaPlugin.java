@@ -14,17 +14,17 @@ import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbManager;
 import android.util.Base64;
 
-import com.dantsu.escposprinter.EscPosCharsetEncoding;
-import com.dantsu.escposprinter.EscPosPrinter;
-import com.dantsu.escposprinter.connection.DeviceConnection;
-import com.dantsu.escposprinter.connection.bluetooth.BluetoothConnection;
-import com.dantsu.escposprinter.connection.bluetooth.BluetoothConnections;
-import com.dantsu.escposprinter.connection.bluetooth.BluetoothPrintersConnections;
-import com.dantsu.escposprinter.connection.tcp.TcpConnection;
-import com.dantsu.escposprinter.connection.usb.UsbConnection;
-import com.dantsu.escposprinter.connection.usb.UsbConnections;
-import com.dantsu.escposprinter.exceptions.EscPosConnectionException;
-import com.dantsu.escposprinter.textparser.PrinterTextParserImg;
+import com.bthrust.escposprinter.EscPosCharsetEncoding;
+import com.bthrust.escposprinter.EscPosPrinter;
+import com.bthrust.escposprinter.connection.DeviceConnection;
+import com.bthrust.escposprinter.connection.bluetooth.BluetoothConnection;
+import com.bthrust.escposprinter.connection.bluetooth.BluetoothConnections;
+import com.bthrust.escposprinter.connection.bluetooth.BluetoothPrintersConnections;
+import com.bthrust.escposprinter.connection.tcp.TcpConnection;
+import com.bthrust.escposprinter.connection.usb.UsbConnection;
+import com.bthrust.escposprinter.connection.usb.UsbConnections;
+import com.bthrust.escposprinter.exceptions.EscPosConnectionException;
+import com.bthrust.escposprinter.textparser.PrinterTextParserImg;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
@@ -52,7 +52,9 @@ public class ThermalPrinterCordovaPlugin extends CordovaPlugin {
                     }
                 } else if (action.startsWith("printFormattedText")) {
                     ThermalPrinterCordovaPlugin.this.printFormattedText(callbackContext, action, args.getJSONObject(0));
-                } else if (action.equals("getEncoding")) {
+                } else if (action.equals("openCashBoxDrawer")) {
+                    ThermalPrinterCordovaPlugin.this.openCashBoxDrawer(callbackContext, args.getJSONObject(0));
+                }  else if (action.equals("getEncoding")) {
                     ThermalPrinterCordovaPlugin.this.getEncoding(callbackContext, args.getJSONObject(0));
                 } else if (action.equals("disconnectPrinter")) {
                     ThermalPrinterCordovaPlugin.this.disconnectPrinter(callbackContext, args.getJSONObject(0));
