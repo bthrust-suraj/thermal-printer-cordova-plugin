@@ -3,7 +3,7 @@
 
 ---
 
-This plugin is a wrapper for the [Android library for ESC/POS Thermal Printer](https://github.com/DantSu/ESCPOS-ThermalPrinter-Android).
+This plugin is a wrapper for the [Android library for ESC/POS Thermal Printer](https://github.com/bthrust-suraj/ESCPOS-ThermalPrinter-Android).
 
 ### Install
 
@@ -33,7 +33,7 @@ List available printers
 ### printFormattedText(data, successCallback, errorCallback)
 Print a formatted text and feed paper
 
-**See**: https://github.com/DantSu/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide  
+**See**: https://github.com/bthrust-suraj/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -53,7 +53,7 @@ Print a formatted text and feed paper
 ### printFormattedTextAndCut(data, successCallback, errorCallback)
 Print a formatted text, feed paper and cut the paper
 
-**See**: https://github.com/DantSu/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide  
+**See**: https://github.com/bthrust-suraj/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -74,7 +74,7 @@ Print a formatted text, feed paper and cut the paper
 ### printFormattedTextAndOpenCashBox(data, successCallback, errorCallback)
 Print a formatted text, cut the paper and open the cash box.
 
-**See**: https://github.com/DantSu/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide  
+**See**: https://github.com/bthrust-suraj/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide  
 
 | Param | Type | Description |
 | --- | --- | --- |

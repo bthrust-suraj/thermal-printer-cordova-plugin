@@ -57,7 +57,7 @@ export interface ThermalPrinterPlugin {
 
   /**
    * Print a formatted text and feed paper
-   * @see https://github.com/DantSu/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide
+   * @see https://github.com/bthrust-suraj/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide
    *
    * @param {Object[]} data - Data object
    * @param {"bluetooth"|"tcp"|"usb"} data.type - List all bluetooth or usb printers
@@ -74,7 +74,7 @@ export interface ThermalPrinterPlugin {
 
   /**
    * Print a formatted text, feed paper and cut the paper
-   * @see https://github.com/DantSu/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide
+   * @see https://github.com/bthrust-suraj/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide
    *
    * @param {Object[]} data - Data object
    * @param {"bluetooth"|"tcp"|"usb"} data.type - List all bluetooth or usb printers
@@ -91,7 +91,7 @@ export interface ThermalPrinterPlugin {
 
   /**
    * Print a formatted text, cut the paper and open the cash box.
-   * @see https://github.com/DantSu/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide
+   * @see https://github.com/bthrust-suraj/ESCPOS-ThermalPrinter-Android#formatted-text--syntax-guide
    *
    * @param {Object[]} data - Data object
    * @param {"bluetooth"|"tcp"|"usb"} data.type - List all bluetooth or usb printers
